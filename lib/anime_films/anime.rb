@@ -1,0 +1,3 @@
+class AnimeFilms::Anime 
+
+end 
