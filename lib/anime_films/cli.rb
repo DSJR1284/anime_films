@@ -58,7 +58,7 @@ class CLI
           
         end 
         
-       # lists the books on my bookshelf for user selection using Command Line Interface
+       
         if input.between?(3, 10)          
           self.wrong_selection
         end
