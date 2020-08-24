@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby 
-
-require_relative "../lib/anime_films.rb"
-
-AnimeFilms::CLI.new.start
