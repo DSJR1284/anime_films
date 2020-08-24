@@ -4,8 +4,8 @@ class CLI
         puts "                               ***  WELCOME ANIME LOVERS ***                                   ".colorize(:color => :white, :background => :black).bold 
         puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red) 
         puts "\n"
-        Films.all.each_with_index do |film, n| 
-          puts "#{n + 1}. #{film.title}"
+        Films.all.each_with_index do |film, i| 
+          puts "#{i + 1}. #{film.title}"
         end
         self.choose_a_anime 
     end 
@@ -54,8 +54,7 @@ class CLI
         end
         if input == 11  
           puts "\n"
-          self.list_animes
-          
+          self.list_animes          
         end 
         
        
@@ -74,7 +73,7 @@ class CLI
 
       def self.leave_anime_films   
         puts " "
-        puts "                 THANK YOU FOR FILMING WITH US. UNTIL NEXT TIME GOODBYE! :-)    ".colorize(:color => :white).bold
+        puts "                 THANK YOU FOR CHECKING OUT OUR COLLECTION. UNTIL NEXT TIME GOODBYE! :-)    ".colorize(:color => :white).bold
         puts " "
         exit
       end
