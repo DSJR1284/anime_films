@@ -1,16 +1,16 @@
 class CLI 
-def self.list_animes 
+  def self.list_animes 
         puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red)  
         puts "                               ***  WELCOME ANIME LOVERS ***                                   ".colorize(:color => :white, :background => :black).bold 
         puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red) 
         puts "\n"
-        Films.all.each_with_index do |film, n| 
-          puts "#{n + 1}. #{film.title}"
-        end
-        self.choose_a_anime 
-    end 
+        Films.all.each_with_index do |film, i| 
+          puts "#{i + 1}. #{film.title}"
+    end
+      self.choose_a_anime 
+  end 
 
-    def self.choose_a_anime
+  def self.choose_a_anime
       puts "\n"
       puts "~~~~~     ~~~~~     ~~~~~    ~~~~~     ~~~~~     ~~~~~    ~~~~~     ~~~~~     ~~~~~    ~~~~~".colorize(:color => :black, :background => :red)  #, :background => :green) # line for spacing aesthetics
       puts "WHICH ANIME WOULD YOU LIKE TO KNOW MORE ABOUT?".colorize(:color => :white).bold
@@ -48,35 +48,33 @@ def self.list_animes
           puts "PLEASE TYPE 22 FOLLOWED BY ENTER IF YOU WOULD LIKE TO EXIT THE PROGRAM.".bold 
           puts " "
           puts "OTHERWISE, YOU MAY TYPE 11 FOLLOWED BY ENTER TO CHOOSE A FILM FROM OUR LIST.".bold 
-        input = gets.chomp.to_i
-        if input == 22
-          self.leave_anime_films
-        end
-        if input == 11  
-          puts "\n"
-          self.list_animes
-          
-        end 
         
-       # lists the books on my bookshelf for user selection using Command Line Interface
-        if input.between?(3, 10)          
+          input = gets.chomp.to_i
+          if input == 22
+            self.leave_anime_films
+          end
+          if input == 11  
+            puts "\n"
+           self.list_animes          
+          end       
+      
+         if input.between?(3, 10)          
           self.wrong_selection
-        end
-          self.wrong_selection
+          end
+           self.wrong_selection
       end      
           
       def self.wrong_selection
-          puts " "
-          puts "                        :-O INVALID SELECTION.".colorize(:color => :white).bold
-          puts " "
-          self.user_options
+        puts " "
+        puts "                        :-O INVALID SELECTION.".colorize(:color => :white).bold
+        puts " "
+        self.user_options
       end   
 
       def self.leave_anime_films   
         puts " "
-        puts "                 THANK YOU FOR FILMING WITH US. UNTIL NEXT TIME GOODBYE! :-)    ".colorize(:color => :white).bold
+        puts "                 THANK YOU FOR CHECKING OUT OUR COLLECTION. UNTIL NEXT TIME GOODBYE! :-)    ".colorize(:color => :white).bold
         puts " "
         exit
-      end
-  
+      end  
 end 
