@@ -45,14 +45,14 @@ class CLI
       end
 
       def self.user_options        
-          puts "PLEASE TYPE 11 FOLLOWED BY ENTER IF YOU WOULD LIKE TO EXIT THE PROGRAM.".bold 
+          puts "PLEASE TYPE 22 FOLLOWED BY ENTER IF YOU WOULD LIKE TO EXIT THE PROGRAM.".bold 
           puts " "
-          puts "OTHERWISE, YOU MAY TYPE 2 FOLLOWED BY ENTER TO CHOOSE A FILM FROM OUR LIST.".bold 
+          puts "OTHERWISE, YOU MAY TYPE 11 FOLLOWED BY ENTER TO CHOOSE A FILM FROM OUR LIST.".bold 
         input = gets.chomp.to_i
-        if input == 11
+        if input == 22
           self.leave_anime_films
         end
-        if input == 2  
+        if input == 11  
           puts "\n"
           self.list_animes
           
