@@ -1,20 +1,20 @@
 class Films   
 
-#     attr_accessor :title, :description, :release_date 
+    attr_accessor :title, :description, :release_date 
     
-#     @@all = []    
+    @@all = []    
 
-#     def initialize(title, description, release_date)
-#         @title = title 
-#         @description = description 
-#         @release_date = release_date
-#         @@all<< self
-#     end 
+    def initialize(title, description, release_date)
+        @title = title 
+        @description = description 
+        @release_date = release_date
+        @@all<< self
+    end 
 
-#     def self.all
-#         @@all 
-#     end     
-# end 
+    def self.all
+        @@all 
+    end     
+end 
 
 
  
