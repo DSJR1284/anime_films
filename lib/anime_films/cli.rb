@@ -67,16 +67,18 @@ class CLI # CLI class display program and takes user input.
     end      
           
     def self.invalid #displays invlaid input message. 
-      puts " "
-      puts "                        :-O INVALID SELECTION.".colorize(:color => :white).bold
-      puts " "
+      puts "\n"
+      puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red)  
+      puts "                              :-0 INVALID SELECTION 0-:                                 ".colorize(:color => :white, :background => :black).bold 
+      puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red) 
+      puts "\n"
       self.user_options
     end   
 
     def self.leave_anime_films #End of application message to the user.   
         puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red)  
         puts " "
-        puts "                         *** THANKS FOR STOPING BY UNTIL NEXT TIME SAYONARA ***                                   ".colorize(:color => :white, :background => :black).bold 
+        puts "                      *** THANKS FOR STOPING BY UNTIL NEXT TIME SAYONARA ***                                   ".colorize(:color => :white, :background => :black).bold 
         puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red) 
         exit 
     end  
