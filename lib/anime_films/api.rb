@@ -8,6 +8,13 @@ class API
           films_hash = JSON.parse(resp) #Translate the data from the RestClinet call to make it easier to work with. 
           Films.new(films_hash["title"], films_hash["description"], films_hash["release_date"])# Calls on the Films class to initialize a new instacne of films with the title, description and release_date.                
         end
-    end    
+    end 
+end    
    
-end
+
+
+
+
+
+
+

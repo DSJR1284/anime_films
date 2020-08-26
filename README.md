@@ -1,6 +1,6 @@
 # AnimeFilms
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/anime_films`. To experiment with that code, run `ruby lib/anime_films/anime_info.rb` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/anime_films`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-To run application type ruby lib/anime_films/anime_info.rb and follow 
+To run application type bin/console and follow 
 instruction on the screen. 
 
 ## Development
