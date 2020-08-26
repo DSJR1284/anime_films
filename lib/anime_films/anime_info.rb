@@ -1,4 +1,4 @@
-module AnimeInfo 
+# require_relative "./anime_films/version"
 
 require 'pry'  # binding.pry used to test methods in program. 
 require 'rest-client'  # this gem allows you GET the data from the API.
@@ -12,4 +12,8 @@ require_relative 'cli'
 #Program Order Of Operation.
   API.get_anime_films #retrives information for my API call.              
   CLI.list_animes   #list anime films for user to choose from in CLI.
+
+  module AnimeInfo 
+  class Error < StandardError ; end
+  # Your code goes here ... 
 end

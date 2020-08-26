@@ -6,7 +6,7 @@ class CLI # CLI class display program and takes user input.
         puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red) 
         puts "\n"
     
-    Films.all.each_with_index do |film, i| #Displays anime films with index  
+        Films.all.each_with_index do |film, i| #Displays anime films with index  
           puts "#{i + 1}. #{film.title}"
     end
       self.choose_a_anime #calls the choose_a_anime method.
