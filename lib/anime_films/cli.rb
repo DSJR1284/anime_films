@@ -74,10 +74,11 @@ class CLI # CLI class display program and takes user input.
     end   
 
     def self.leave_anime_films #End of application message to the user.   
-      puts " "
-      puts "                 THANK YOU FOR CHECKING OUT OUR COLLECTION. UNTIL NEXT TIME GOODBYE! :-)    ".colorize(:color => :white).bold
-      puts " "
-      exit
+        puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red)  
+        puts " "
+        puts "                         *** THANKS FOR STOPING BY UNTIL NEXT TIME SAYONARA ***                                   ".colorize(:color => :white, :background => :black).bold 
+        puts "~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~     ~~~~~".colorize(:color => :black, :background => :red) 
+        exit 
     end  
 
   end 
