@@ -17,3 +17,4 @@ require_relative 'cli'
   class Error < StandardError ; end
   # Your code goes here ... 
 end
+
