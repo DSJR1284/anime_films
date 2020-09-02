@@ -1,5 +1,5 @@
 #TODO - What do I want my app to do. 
-1. List the Anime Films 
-2. User chooses a film 
-3. Displays film description and release date. 
+1. Greet or Welcome the user 
+2. Display films and instruction for user to follow
+3. Displays film, description, and relase date base on user input.
 4. User can return to the films list or exit the program. 
